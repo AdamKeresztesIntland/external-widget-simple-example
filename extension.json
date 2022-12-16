@@ -1,13 +1,59 @@
 {
+  "documentViewWidgets": [
+    {
+      "enabled": "true",
+      "externalWidgetConfig": {
+        "id": "test-widget",
+        "name": "Test Widget",
+        "viewUrl": "/",
+        "iconUrl": "/chart.png"
+      }
+    }
+  ],
+  "itemDetailsWidgets": [
+    {
+      "enabled": "true",
+      "externalWidgetConfig": {
+        "id": "test-widget2",
+        "name": "Test Widget",
+        "viewUrl": "/",
+        "iconUrl": "/chart.png"
+      }
+    }
+  ],
   "dashboardWidgets": [
     {
       "enabled": "true",
       "externalWidgetConfig": {
-        "id": "dashboard-widget-example",
-        "name": "Dashboard Widget Example",
-        "viewUrl": "./index.html",
-        "iconUrl": "./icon.png",
+        "id": "test-dashboard-widget",
+        "name": "Test Dashboard Widget",
+        "shortDescription" : "test external dashboard widget",
+        "category" : "other",
+        "knowledgeBaseUrl" : "http://localhost:4200/knowledgeBase",
+        "viewUrl": "/",
+        "iconUrl": "/chart.png",
         "attributes": {
+          "someText": {
+            "typeName": "string",
+            "fieldLabel": "Some Text",
+            "required": true,
+            "validationRequired": false,
+            "value": "aaa"
+          },
+          "trackerId": {
+            "typeName": "tracker",
+            "fieldLabel": "Tracker Custom Label",
+            "required": true,
+            "validationRequired": false,
+            "value": []
+          },
+          "trackerId2": {
+            "typeName": "tracker",
+            "fieldLabel": "Tracker Custom Label 2",
+            "required": true,
+            "validationRequired": false,
+            "value": []
+          }
         }
       }
     }
